@@ -12,7 +12,7 @@ app.config(['$stateProvider', '$urlMatcherFactoryProvider',
             url: "/search/:term",
             resolve: {
                results: function($http, $stateParams) {
-                  return $http.get("http://www.omdbapi.com/?r=json&type=movie&s=" + $stateParams.term);
+                  return $http.get("https://www.omdbapi.com/?r=json&type=movie&s=" + $stateParams.term);
                }
             },
             templateUrl: "templates/results.html",
@@ -25,7 +25,7 @@ app.config(['$stateProvider', '$urlMatcherFactoryProvider',
             url: "/movie/:imdbID",
             resolve: {
                movie: function($http, $stateParams) {
-                  return $http.get("http://www.omdbapi.com/?r=json&plot=full&i=" + $stateParams.imdbID);
+                  return $http.get("https://www.omdbapi.com/?r=json&plot=full&i=" + $stateParams.imdbID);
                },
                faves: function($http) {
                   return $http.get("/favorites");

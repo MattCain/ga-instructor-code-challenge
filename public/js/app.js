@@ -2,7 +2,7 @@
  * Main script for the omdb search app. No libraries or frameworks used, just vanilla JS.
 */
 
-var omdbUrl = "http://www.omdbapi.com/?r=json",
+var omdbUrl = "https://www.omdbapi.com/?r=json",
    faves = [];
 /*
  * Start by loading the favourites from the server
