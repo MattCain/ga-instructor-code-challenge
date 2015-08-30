@@ -1,0 +1,18 @@
+<h3 id="movie-title">{{movie.Title}}</h3>
+<dl class="dl-horizontal col-md-9">
+  <dt>Year</dt>
+  <dd>{{movie.Year}}</dd>
+  <dt>Genre</dt>
+  <dd>{{movie.Genre}}</dd>
+  <dt>Actors</dt>
+  <dd>{{movie.Actors}}</dd>
+  <dt>Awards</dt>
+  <dd>{{movie.Awards}}</dd>
+  <dt>Runtime</dt>
+  <dd>{{movie.Runtime}}</dd>
+  <dt>Plot</dt>
+  <dd>{{movie.Plot}}</dd>
+</dl>
+<img id="movie-poster" class="col-md-3" ng-src="{{movie.Poster}}">
+<button class="btn btn-primary btn-lg pull-left" ng-hide="faved" ng-click="favorite(movie.imdbID)">Add to Favorites</button>
+<p ng-show="faved">Added to favorites</p>

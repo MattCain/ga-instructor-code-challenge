@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matt's Movie Search App!</title>
+    
+    <!-- Load bootstrap CSS for some basic styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="navbar navbar-default">
+      <div class="container">
+        <a href="/" class="navbar-brand">Matt's Movie Search App!</a>
+        <div class="navbar-form navbar-right">
+          <button class="btn btn-primary" id="view-favorites">My Favorites</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+
+    <!-- The search form will always sit at the top of the page -->
+      <form id="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="search-term" placeholder="Search for a movie!" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary btn-lg center-block" value="Search!">
+        </div>
+      </form>
+
+      <!-- The main "views" of the app are split into seperate "page" elements. They are all hidden by default. -->
+      <div id="search-results" class="page hidden">
+        <h3>Search Results</h3>
+        <div class="list-group"></div>
+      </div>
+
+      <div id="favorites" class="page hidden">
+        <h3>My Favorites</h3>
+        <div class="list-group"></div>
+      </div>
+
+      <div id="movie-details" class="page hidden">
+        <h3 id="movie-title"></h3>
+        <dl class="dl-horizontal col-md-9">
+          <dt>Year</dt>
+          <dd id="movie-year"></dd>
+          <dt>Genre</dt>
+          <dd id="movie-genre"></dd>
+          <dt>Actors</dt>
+          <dd id="movie-actors"></dd>
+          <dt>Awards</dt>
+          <dd id="movie-awards"></dd>
+          <dt>Runtime</dt>
+          <dd id="movie-runtime"></dd>
+          <dt>Plot</dt>
+          <dd id="movie-plot"></dd>
+        </dl>
+        <img id="movie-poster" class="col-md-3">
+        <button id="add-to-favorites" class="btn btn-primary btn-lg pull-left"></button>
+      </div>
+
+      <div id="loading" class="page hidden">
+        <img src="loading.gif" class="center-block">
+      </div>
+
+    </main>
+
+    <!-- Load our app script. It goes at the bottom of the page to allow the page to render first. If we put it in the head we wouldn't be able to interact with the elements on the page immediately (without taking some extra steps) as they wouldn't exist yet. -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
