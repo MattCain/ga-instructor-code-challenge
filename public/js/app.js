@@ -77,6 +77,7 @@ var resultClickHandler = function (ev) {
       setElementContents("#movie-title", movieDeets.Title);
       setElementContents("#movie-year", movieDeets.Year);
       setElementContents("#movie-genre", movieDeets.Genre);
+      setElementContents("#movie-director", movieDeets.Director);
       setElementContents("#movie-actors", movieDeets.Actors);
       setElementContents("#movie-awards", movieDeets.Awards);
       setElementContents("#movie-runtime", movieDeets.Runtime);
