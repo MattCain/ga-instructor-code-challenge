@@ -8,8 +8,8 @@ The benefits of using angular are:
  - Routing and views, allowing you to show the right application state depending on the URL.
  - Templating rather than having to use code to explicitly put data into the DOM in the right places.
  - Better ajax functions provided, no need to touch XHR objects yourself.
-- Readabilty. Writing so much less code makes it much easier to read it!
 - Modularity. Angular makes it easy to split your code into re-usable chunks, making your codebase a lot more organized.
+- Readabilty. Writing so much less code, and in a modular way, makes it much easier to read it!
 - Testability. There are lots of tools and frameworks for unit testing your angular code. Also made easier by the modularity!
 - Big community. There's lots of 3rd party components and loads of questions covering the common issues you might run into on StackOverflow.
 
