@@ -7,6 +7,8 @@ Run locally:
     npm install
     npm start
 
+Then go to http://localhost:3000
+
 #### Deliverables
 
 - [Vanilla JS](https://mighty-caverns-1397.herokuapp.com)
