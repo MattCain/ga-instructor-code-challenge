@@ -2,6 +2,11 @@
 
 ## WDI Instructor Code Challenge
 
+Run locally:
+
+    npm install
+    npm start
+
 #### Deliverables
 
 - [Vanilla JS](https://mighty-caverns-1397.herokuapp.com)
