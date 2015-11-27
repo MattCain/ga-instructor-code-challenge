@@ -7,7 +7,10 @@ Run locally:
     npm install
     npm start
 
-Then go to http://localhost:3000
+Then go to 
+
+- http://localhost:3000 for the vanilla JS app
+- http://localhost:3000/angular.html for the angular app
 
 #### Deliverables
 
